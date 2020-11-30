@@ -1,0 +1,13 @@
+{
+    "name": "Tech-Test",
+    "version": "1.0.0",
+    "dependencies": {
+        "@cucumber/cucumber": "^7.0.0-rc.0"
+    },
+    "devDependencies": {
+        "taiko": "^1.0.28"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/cucumber-js"
+    }
+}
