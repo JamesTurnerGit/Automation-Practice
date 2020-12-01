@@ -6,12 +6,12 @@ require('dotenv').config()
 setDefaultTimeout(30 * 1000);
 
 Before(async function () {
-  await openBrowser({ navigationTimeout: 10,headless:false, observeTime: 0 });
+  await openBrowser({ navigationTimeout: 10, observeTime: 0 });
   await goto("http://automationpractice.com/")
 })
 
 After(async function () {
-  //await closeBrowser();
+  await closeBrowser();
 })
 
 Given('I have a user with the following information', function (dataTable) {
