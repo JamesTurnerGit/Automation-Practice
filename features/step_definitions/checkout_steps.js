@@ -6,5 +6,5 @@ When('I agree to the terms of service', async function () {
 });
 
 When('I remove {string} from my cart', async function (string) {
-    await click($('icon-trash', toRightOf(string)))
+    await click($('.icon-trash', toRightOf(string)))
 })

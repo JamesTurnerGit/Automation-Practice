@@ -1,5 +1,5 @@
 const { Given, When, Then } = require("@cucumber/cucumber")
-const { click, $, checkBox, evaluate, hover, waitFor } = require("taiko")
+const { click, $, checkBox, evaluate, waitFor, hover} = require("taiko")
 const assert = require('assert')
 
 Given('I\'m on the womens clothing shopfront', async function () {
@@ -17,12 +17,11 @@ When('I add {string} to my cart', async function (item) {
         let text = await element.text()
         if (text.includes(item)) {
             await hover(element)
-            await evaluate((element) => {
+            await evaluate(element,(element) => {
                 element.querySelector('a.button[title="Add to cart"]').click()
             })
-            waitFor(50) 
-            // waiting for a css animation to finish
         }
+        await waitFor(100) // cs animation
     }
 })
 

@@ -20,3 +20,5 @@ I've been using it a bit lately, It's got all the functionality of selenium (cri
 One of the scenario fails is on purpose, as the filtering on the page is not functional
  
 Some of these "passes" would be raised as the wording on a lot of the failure messages is very very poor.
+
+I've deliberatly included several "styles" of writing gerkin(verbose and reusable, Terse and more business friendly) as I consider this to be something worked out with product owners
