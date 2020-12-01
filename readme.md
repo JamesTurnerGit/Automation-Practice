@@ -1,17 +1,22 @@
-npm i
-npm test
+# Automation Practice
 
-abc@xyz.com/Test@123
+## Setup
+type `npm i` in a command prompt
+rename `example.env` to `.env`
+Inside your `.env` file add a valid user and password
 
-why these tests?
+## Running
+type `npm test` in a command prompt
 
-why taiko?
 
-differences to a normal test 
- - tests have interdependancy
- - there would be more scenarios per feature (unhappy paths)
- - Passwords and other secrets would be kept in a .env file not uploaded publicly (used passwords)
- - Configuration would be extracted to a file so other enviroments could be targeted simply
+## notes
+### why these tests?
+In this scenario I was only allowed to make five tests without a given focus, So my five tests focus on trying to cover what would probably be the business requirements. They don't do it perfectly and there's a lot more testing that would have to be done before this could be considered a decent test suite
 
- notes
- Some of these "passes" would be raised as the wording on a lot of the failure messages is very very poor.
+### why taiko? 
+I've been using it a bit lately, It's got all the functionality of selenium (critically though it is missing a lot of browser support still so still not that viable for commercial use), and does a great job of producing readable code. I particularly like the proxity selectors ("near", "below", "to right of") as they do a great approximation of how you'd talk a human through the tasks.
+
+### other comments
+One of the scenario fails is on purpose, as the filtering on the page is not functional
+ 
+Some of these "passes" would be raised as the wording on a lot of the failure messages is very very poor.

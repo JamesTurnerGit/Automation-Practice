@@ -2,7 +2,8 @@
     "name": "Tech-Test",
     "version": "1.0.0",
     "dependencies": {
-        "@cucumber/cucumber": "^7.0.0-rc.0"
+        "@cucumber/cucumber": "^7.0.0-rc.0",
+        "dotenv": "^8.2.0"
     },
     "devDependencies": {
         "taiko": "^1.0.28"
