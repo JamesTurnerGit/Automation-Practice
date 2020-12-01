@@ -6,8 +6,8 @@ require('dotenv').config()
 setDefaultTimeout(30 * 1000);
 
 Before(async function () {
-  await openBrowser({ navigationTimeout: 10, observeTime: 0 });
-  await goto("http://automationpractice.com/")
+  await openBrowser({ navigationTimeout: 10,headless: process.env.HEADLESS_MODE == "TRUE", observeTime: 0 });
+  await goto(process.env.URL)
 })
 
 After(async function () {
@@ -34,7 +34,6 @@ When('I click {string}', async function (string) {
 });
 
 Then('I get the following errors', async function (dataTable) {
-
   for (item of dataTable.raw()){
     await text(item[0]).exists()
   }

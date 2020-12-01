@@ -7,7 +7,6 @@ Feature: I can change what's in my cart
         And I click 'Continue shopping'
         And I add 'Blouse' to my cart
         And I click 'Proceed to checkout' 
-
         And I remove 'Faded Short Sleeve T-shirts' from my cart
 
         Then I see 'Your shopping cart contains: 1 Product' on the page

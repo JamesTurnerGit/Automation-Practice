@@ -9,7 +9,6 @@ Feature: Users can buy items
         And I click 'proceed to checkout'
         And I click 'proceed to checkout'
         And I click 'proceed to checkout'
-        And I click 'proceed to checkout'
         And I agree to the terms of service
         And I click 'proceed to checkout'
         And I click 'Pay by bank Wire'

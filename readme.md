@@ -4,9 +4,12 @@
 type `npm i` in a command prompt
 rename `example.env` to `.env`
 Inside your `.env` file add a valid user and password
+To change headless mode change line 4 in your .env file
+
 
 ## Running
 type `npm test` in a command prompt
+
 
 
 ## notes
